@@ -1,0 +1,26 @@
+# This "input" configures a global authorization rule to enable public access to
+# all models in this schema. Learn more about authorization rules here: https://docs.amplify.aws/cli/graphql/authorization-rules
+input AMPLIFY {
+  globalAuthRule: AuthRule = { allow: public }
+} # FOR TESTING ONLY!
+type Message @model {
+  id: ID! @primaryKey(sortKeyFields: ["createdAt"])
+  senderUser: User @hasOne
+  recepientUser: User @hasOne
+  body: String!
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime!
+}
+
+type User @model {
+  id: ID! @primaryKey
+  appUserId: Int! @index(name: "byAppUserId")
+  firstName: String!
+  lastName: String!
+  imageUrl: String!
+  schoolName: String!
+  grades: String!
+  role: String!
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime!
+}

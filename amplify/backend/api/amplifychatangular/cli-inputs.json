@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "serviceConfiguration": {
+    "apiName": "amplifychatangular",
+    "serviceName": "AppSync",
+    "gqlSchemaPath": "C:\\Users\\91958\\OneDrive\\Documents\\MyProjects\\amplify-chat-angular\\amplify\\backend\\api\\amplifychatangular\\schema.graphql",
+    "defaultAuthType": {
+      "mode": "API_KEY",
+      "expirationTime": 7
+    }
+  }
+}

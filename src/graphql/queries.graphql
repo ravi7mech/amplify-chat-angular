@@ -1,0 +1,103 @@
+# this is an auto generated file. This will be overwritten
+query GetMessage($id: ID!) {
+  getMessage(id: $id) {
+    id
+    senderUser {
+      id
+      appUserId
+      firstName
+      lastName
+      imageUrl
+      schoolName
+      grades
+      role
+      createdAt
+      updatedAt
+    }
+    recepientUser {
+      id
+      appUserId
+      firstName
+      lastName
+      imageUrl
+      schoolName
+      grades
+      role
+      createdAt
+      updatedAt
+    }
+    body
+    createdAt
+    updatedAt
+    messageSenderUserId
+    messageRecepientUserId
+  }
+}
+query ListMessages(
+  $id: ID
+  $filter: ModelMessageFilterInput
+  $limit: Int
+  $nextToken: String
+  $sortDirection: ModelSortDirection
+) {
+  listMessages(
+    id: $id
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    sortDirection: $sortDirection
+  ) {
+    items {
+      id
+      body
+      createdAt
+      updatedAt
+      messageSenderUserId
+      messageRecepientUserId
+    }
+    nextToken
+  }
+}
+query GetUser($id: ID!) {
+  getUser(id: $id) {
+    id
+    appUserId
+    firstName
+    lastName
+    imageUrl
+    schoolName
+    grades
+    role
+    createdAt
+    updatedAt
+  }
+}
+query ListUsers(
+  $id: ID
+  $filter: ModelUserFilterInput
+  $limit: Int
+  $nextToken: String
+  $sortDirection: ModelSortDirection
+) {
+  listUsers(
+    id: $id
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    sortDirection: $sortDirection
+  ) {
+    items {
+      id
+      appUserId
+      firstName
+      lastName
+      imageUrl
+      schoolName
+      grades
+      role
+      createdAt
+      updatedAt
+    }
+    nextToken
+  }
+}

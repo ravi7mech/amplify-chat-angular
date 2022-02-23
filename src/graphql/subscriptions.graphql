@@ -1,0 +1,145 @@
+# this is an auto generated file. This will be overwritten
+subscription OnCreateMessage {
+  onCreateMessage {
+    id
+    senderUser {
+      id
+      appUserId
+      firstName
+      lastName
+      imageUrl
+      schoolName
+      grades
+      role
+      createdAt
+      updatedAt
+    }
+    recepientUser {
+      id
+      appUserId
+      firstName
+      lastName
+      imageUrl
+      schoolName
+      grades
+      role
+      createdAt
+      updatedAt
+    }
+    body
+    createdAt
+    updatedAt
+    messageSenderUserId
+    messageRecepientUserId
+  }
+}
+subscription OnUpdateMessage {
+  onUpdateMessage {
+    id
+    senderUser {
+      id
+      appUserId
+      firstName
+      lastName
+      imageUrl
+      schoolName
+      grades
+      role
+      createdAt
+      updatedAt
+    }
+    recepientUser {
+      id
+      appUserId
+      firstName
+      lastName
+      imageUrl
+      schoolName
+      grades
+      role
+      createdAt
+      updatedAt
+    }
+    body
+    createdAt
+    updatedAt
+    messageSenderUserId
+    messageRecepientUserId
+  }
+}
+subscription OnDeleteMessage {
+  onDeleteMessage {
+    id
+    senderUser {
+      id
+      appUserId
+      firstName
+      lastName
+      imageUrl
+      schoolName
+      grades
+      role
+      createdAt
+      updatedAt
+    }
+    recepientUser {
+      id
+      appUserId
+      firstName
+      lastName
+      imageUrl
+      schoolName
+      grades
+      role
+      createdAt
+      updatedAt
+    }
+    body
+    createdAt
+    updatedAt
+    messageSenderUserId
+    messageRecepientUserId
+  }
+}
+subscription OnCreateUser {
+  onCreateUser {
+    id
+    appUserId
+    firstName
+    lastName
+    imageUrl
+    schoolName
+    grades
+    role
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateUser {
+  onUpdateUser {
+    id
+    appUserId
+    firstName
+    lastName
+    imageUrl
+    schoolName
+    grades
+    role
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteUser {
+  onDeleteUser {
+    id
+    appUserId
+    firstName
+    lastName
+    imageUrl
+    schoolName
+    grades
+    role
+    createdAt
+    updatedAt
+  }
+}

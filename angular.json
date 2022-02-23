@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "amplify-chat-angular"
+  "defaultProject": "amplify-chat-angular",
+  "cli": {
+    "analytics": false
+  }
 }
